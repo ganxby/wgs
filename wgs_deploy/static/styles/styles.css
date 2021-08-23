@@ -1,0 +1,129 @@
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.border-2 {
+     border-width:2px !important;
+}
+
+.dropdown-menu {
+    min-width: 40px;
+}
+
+#imgCom {
+
+    height: 40%;
+    width: 40%;
+    }
+
+.form form {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+/*-------------------------*/
+
+@media screen and (max-width: 1020px) {
+
+    .navbar-brand{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #nvbr {
+        font-size: 150% !important;
+        padding-right: 30px;
+
+    }
+
+    .col-md-3 carousel slide {
+        padding: 100%;
+    }
+
+    .dropdown {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    #fontsz {
+        font-size: 125% !important;
+    }
+
+    #cardpad {
+        padding-top: 6% !important;
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+    }
+
+    #pad1 {
+      padding-top: 6% !important;
+      padding-bottom: 10% !important;
+    }
+
+    #pad2 {
+      padding-bottom: 16% !important;
+    }
+
+    #phMob {
+      padding-bottom: 10% !important;
+    }
+
+    #phMobPh {
+      padding-bottom: 4% !important;
+    }
+
+}
+
+/*-------------------------*/
+
+@media screen and (max-width: 600px) {
+    #phMob {
+      padding-bottom: 10% !important;
+    }
+
+    #phMobPh {
+      padding-bottom: 4% !important;
+    }
+
+    #pad1 {
+      padding-top: 6% !important;
+      padding-bottom: 10% !important;
+    }
+
+    #pad2 {
+      padding-bottom: 16% !important;
+    }
+
+    #nvbr {
+        font-size: 115% !important;
+    }
+
+    #imgCom {
+        /*padding-left: 1% !important;*/
+        padding-top: 6% !important;
+    }
+}
+
+/*body {*/
+/*    background-image: url('/static/backgr.jpg');*/
+/*}*/

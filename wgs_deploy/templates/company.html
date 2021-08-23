@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>Wehlau Game Studio</title>
+</head>
+
+<body style="background: #999999">
+
+<nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark py-3 border-bottom border-2">
+    <div class="container-fluid">
+        <a  class="navbar-brand" href="/">
+            <img src="/static/WehlauTest.png" height=90%>
+             <a id="nvbr" style="color: whitesmoke; font-size: 250%"> Wehlau Game Studio </a>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav" style="padding-right: 10px"> <!--nav-tabs-->
+                <a id="fontsz" style="font-size: 200%" class="nav-item nav-link" href="/" >Игры </a>
+                <a id="fontsz" style="font-size: 200%" class="nav-item nav-link active" href="#">Компания</a>
+                <a id="fontsz" style="font-size: 200%" class="nav-item nav-link" href="/team">Команда</a>
+            </div>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        Lang
+                    </button>
+                 <div class="dropdown-menu">
+                    <p class="dropdown-item" href="#">RU</p>
+                    <a class="dropdown-item" href="#">EN</a>
+                 </div>
+              </div> -->
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid-1" id="phMob" style="padding-top: 4%; padding-right: 6%; padding-left: 6%">
+    <div class="row">
+
+        <div class="col-md " style="padding-left: 6%" id="phMobPh">
+            <div class="col-md">
+                <img class=" rounded" style="margin-right: 6%" src="/static/grey_logo.png" id="imgCom">
+								<img class=" rounded" src="/static/green_logo.jpg" id="imgCom">
+            </div>
+        </div>
+        <div class="col-md text-break" style=" font-size: 120%; color: whitesmoke;  padding-top: 1%; padding-bottom: 1%; line-height: 200%; background: #212529; border-radius: 10px">
+            <strong>Велау (Wehlau)</strong>, до 1946 - года город в Восточной Пруссии. С 1946 года - Знаменск.
+						Сейчас Знаменск является маленьким городком, в котором активно развивается туризм.
+						Этому способствует обилие достопримечательностей немецкого наследия.
+						Активно совершенствуется водный туризм: сплав на байдарках и на SUP-доске, экскурсии или
+						 банкеты на маленьком, но очень уютном корабле "Лавоход", названном в честь реки, по которой он ходит - Лаве.
+						 <br>Компания имеет название <strong>"Wehlau Game Studio"</strong>, так как ее история началась именно здесь, и мы хотим оставить свой след в жизни этого чудесного города.
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid" style="padding-top: 4%">
+    <div class="row">
+        <div class="col-2"></div>
+        <div id="carouselExampleIndicators" class="col-md-8 carousel slide" data-ride="carousel" style="padding: 2%">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="margin: auto;" class="d-block w-75 h-75 rounded" src="/static/photo1.jpg" alt="Первый слайд">
+                </div>
+                <div class="carousel-item">
+                    <img style="margin: auto;" class="d-block w-75 h-75 rounded" src="/static/photo2.jpg" alt="Второй слайд">
+                </div>
+                <div class="carousel-item">
+                    <img style="margin: auto;" class="d-block w-75 h-75 rounded" src="/static/photo3.jpg" alt="Третий слайд">
+                </div>
+								<div class="carousel-item">
+                    <img style="margin: auto;" class="d-block w-75 h-75 rounded" src="/static/photo5.jpg" alt="Четвертый слайд">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+<div class="container-fluid" style="padding-top: 2%; padding-right: 6%; padding-left: 6%">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-break" style="font-size: 120%; color: whitesmoke; line-height: 200%; background: #212529; border-radius: 10px; padding-top: 1%; padding-bottom: 1%">
+            Наша команда занимается выпуском интересных мобильных игр с увлекательным, вдумчивым,
+						неказуальным геймплеем. Но, помимо мобильных игр, компания планирует впоследствии выпускать и игры на ПК.
+						<br>Основные жанры, на которых сейчас сосредотачивается проект: <strong>platformer, top-down shooter, roguelike.</strong>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<div class="container" style="height: 100px"></div>
+
+    <div class="container-fluid border-top" style="padding-top: 1%; background: #212529;">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4 ">
+            <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
+              <small class="d-block mb-3" style="color: whitesmoke">&copy; 2021 Wehlau Game Studio <small class="d-block mb-3" style="color: whitesmoke">Все права защищены</small></small>
+
+          </div>
+          <div class="col-md-4 ">
+
+            <ul class="list-unstyled text-small">
+              <li><a style="color: whitesmoke" href="#">Правила</a></li>
+              <li><a style="color: whitesmoke" href="#">Политика конфиденциальности</a></li>
+              <li><a style="color: whitesmoke" href="#">Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled text-small">
+              <li><a target="_blank" style="color: whitesmoke" href="https://vk.com/lightabsorber">VK</a></li>
+              <li><a style="color: whitesmoke" href="#">Instagram</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
